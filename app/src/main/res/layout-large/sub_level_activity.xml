@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_background"
+    android:orientation="vertical"
+    tools:context=".activity.SubLevelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/imgLevelName"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/bangl_button_text" />
+
+            <ImageView
+                android:id="@+id/imageViewSub"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:layout_alignBottom="@+id/imgLevelName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/violet_coins" />
+
+            <TextView
+                android:id="@+id/txtAllTotalPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imgHelpSub"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/imageViewSub"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/help_btn" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/changeColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/violet_panel"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/levelSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="cursive"
+                android:text="Select Level"
+                android:textColor="#fff"
+                android:textSize="50dp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="39dp"
+                android:layout_marginStart="39dp"
+                android:background="@drawable/prev_btn" />
+
+            <Button
+                android:id="@+id/btnSubSetting"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="41dp"
+                android:layout_marginRight="41dp"
+                android:background="@drawable/settings" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--<com.google.android.gms.ads.AdView-->
+    <!--android:id="@+id/adView"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--ads:adSize="BANNER"-->
+    <!--ads:adUnitId="@string/banner_ad_unit_id" />-->
+
+
+</LinearLayout>
